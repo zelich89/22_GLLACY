@@ -1,0 +1,19 @@
+.choose {
+
+  &__items {
+    //@extend .row;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  &__item {
+    //@extend .col-3;
+    width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  &--indent {
+    margin-bottom: 32px;
+  }
+}

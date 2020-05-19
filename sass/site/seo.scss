@@ -1,0 +1,39 @@
+.seo {
+  &__content {
+    border-radius: 15px;
+    padding: 25px 20px;
+    background: url(../images/waffle-big.png) no-repeat center center;
+  }
+  &__title {
+    @include font(500, 24px, 30px);
+    color: #323232;
+    &--indent {
+    }
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -13px;
+    margin-left: -13px;
+  }
+  &__item {
+    width: 50%;
+    padding: 0 13px;
+    display: flex;
+    margin-top: 10px;
+  }
+  &__icon {
+    &--indent {
+      margin-right: 5px;
+    }
+  }
+  &__text {
+    @include font(normal, 16px, 22px);
+    &--indent {
+      margin-top: 15px;
+    }
+  }
+  &--indent{
+    margin-bottom: 35px;
+  }
+}

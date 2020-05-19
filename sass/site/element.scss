@@ -1,0 +1,37 @@
+.element {
+  position: relative;
+  &__image {
+    width: 100%;
+    border-radius: 50%;
+    &--indent {
+      margin-bottom: 20px;
+    }
+  }
+  &__price {
+    position: absolute;
+    bottom: 5px;
+    transform: translateY(-125%);
+    @include font(bold, 45px, 45px);
+    color: white;
+  }
+  &__disp {
+    @include font(bold, 30px, 45px);
+  }
+  &__description {
+    text-align: center;
+    @include font(500, 16px, 22px);
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: rgba(white,1);
+  }
+  &.hit:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include square-size($hit-size);
+    display: block;
+    background: url("../images/hit.svg") no-repeat center center;
+    z-index: 1;
+  }
+}

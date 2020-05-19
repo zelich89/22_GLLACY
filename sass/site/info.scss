@@ -1,0 +1,102 @@
+.info {
+  &__warp {
+    &--indent {
+      padding-right: 13px;
+      padding-left: 13px;
+    }
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -13px;
+    margin-left: -13px;
+  }
+  &__item {
+    width: 50%;
+    min-height: 220px;
+    padding: 0 13px;
+  }
+  &__cart {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    &--bg-strawb {
+      background: url("../images/strawb-fon.png") no-repeat 20% center ;
+    }
+    &--letter-bg {
+      background: url("../images/letter-center.png") repeat-y;
+    }
+  }
+  &__add {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 25px 20px;
+    &--letter {
+      top: 5px;
+      right: 5px;
+      bottom: 5px;
+      left: 5px;
+      border-radius: 15px;
+      background-color: #f8f7f4;
+      padding: 30px 20px;
+    }
+  }
+  &__text {
+    @include font(500, 16px, 22px);
+    color: #323232;
+    &--letter {
+    color: #5a5a5a;
+    }
+    &--letter-indent {
+      margin-bottom: 35px;
+    }
+    &--indent {
+      margin-bottom: 5px;
+    }
+  }
+  &__title {
+    display: inline-block;
+    width: 55%;
+    @include font(bold, 24px, 30px);
+    color: #323232;
+    transition: all $transition-time ease;
+    &:hover {
+      color: darken(#323232, 25%);
+    }
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+  &__input {
+    flex-grow: 1;
+    border-radius: 10px;
+    border: 1px solid rgba(#b2b2b2, .52);
+    padding: 10px 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    @include font(normal, 18px, 22px);
+    &--indent {
+      margin-right: 10px;
+    }
+  }
+  &__block {
+    display: flex;
+    &--sb {
+      justify-content: space-between;
+    }
+  }
+  &__btn {
+    @include font(bold, 18px, 22px);
+    color: white;
+  }
+
+  &--indent {
+    margin-bottom: 40px;
+  }
+}

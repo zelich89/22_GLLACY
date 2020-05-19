@@ -1,0 +1,16 @@
+.social {
+  display: inline-flex;
+  & *:not(:last-child) {
+    margin-right: 11px;
+  }
+  &__item {
+    color: white;
+    border-radius: 50%;
+    border: 3px solid rgba(white,.5);
+  }
+  &__icon {
+
+  }
+
+
+}

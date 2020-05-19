@@ -1,0 +1,30 @@
+.footer {
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  &__social {
+
+
+  }
+  &__list {
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    @include font(normal, 13px, 18px);
+    text-decoration: underline;
+    text-decoration-color: rgba(white, .2);
+  }
+  &__copyright {
+
+
+  }
+}

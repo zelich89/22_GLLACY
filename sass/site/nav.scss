@@ -1,0 +1,15 @@
+.nav {
+
+  &__items {
+    display: flex;
+    list-style-type: none;
+    & *:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+  &__item {
+    color: white;
+    border-bottom: 1px solid rgba(white, .2);
+    @include font(bold, 16px, 18px);
+  }
+}

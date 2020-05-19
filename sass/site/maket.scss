@@ -1,0 +1,17 @@
+.maket {
+  position: relative;
+  &__pos {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .3;
+    z-index: 11;
+    pointer-events: none;
+    &--desktop {
+      display: none;
+      @if $maket-visible == 1 {
+        display: block;
+      }
+    }
+  }
+}

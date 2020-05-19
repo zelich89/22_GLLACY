@@ -1,0 +1,25 @@
+.actions {
+  & *:not(:first-child) {
+    margin-left: 10px;
+  }
+  
+  &__item {
+    display: flex;
+    padding: 9px;
+    border-radius: 17px;
+    color: white;
+    &--bg {
+      background-color: #a0b5a9;
+    }
+    &--with {
+      padding-right: 17px;
+      padding-left: 17px;
+    }
+    .svg {
+      @include square-size(17px);
+    }
+  }
+  &__text {
+    @include font(500, 14px, 16px);
+  }
+}

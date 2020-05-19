@@ -1,16 +1,27 @@
-//@import "site/null-bs";
-@import "site/mixins/mixins";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
-@import "site/style";
-@import "site/backgrounds";
-@import "site/borders";
-@import "site/buttons";
-@import "site/colors";
-@import "site/fonts";
-@import "site/links";
-@import "site/menu";
-@import "site/sizes";
-@import "site/svgs";
+@import "site/null-bs";
+@import "site/mixins";
+
 @import "site/variables";
-@import "site/z-index";
+@import "site/_types.scss";
+@import "site/style";
+
+@import "site/maket";
+@import "site/svgs";
+@import "site/logo";
+@import "site/nav";
+@import "site/actions";
+@import "site/btn";
+@import "site/element";
+@import "site/social";
+
+@import "site/header";
+@import "site/main-sect";
+@import "site/banner";
+@import "site/choose";
+@import "site/seo";
+@import "site/info";
+@import "site/map";
+@import "site/footer";
 

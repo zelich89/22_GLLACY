@@ -1,0 +1,28 @@
+.header {
+  &__warps {
+    display: flex;
+    align-items: center;
+    &--indent {
+      padding-top: 10px;
+    }
+  }
+  &__logo {
+    color: white;
+    .svg {
+      width: 155px;
+      height: 65px;
+  }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    &--indent {
+      margin-left: 20px;
+    }
+  }
+  &__actions {
+    display: flex;
+
+  }
+}

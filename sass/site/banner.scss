@@ -1,0 +1,72 @@
+.banner {
+  &__warp {
+    &--indent {
+      padding-right: 13px;
+      padding-left: 13px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -13px;
+    margin-left: -13px;
+  }
+  &__item {
+    width: 50%;
+    height: 230px;
+    padding: 0 13px;
+  }
+  &__element{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    &--bg-rasb {
+      background: url("../images/rasb-fon.png");
+    }
+    &--bg-chok {
+      background: url("../images/chok-fon.png");
+    }
+  }
+  &__add {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+  }
+  &__name {
+    @include font(bold, 35px, 41px);
+    color: white;
+    &--indent {
+      margin-bottom: 15px;
+    }
+  }
+  &__text {
+    @include font(bold, 18px, 22px);
+    color: white;
+    //height: 66px;
+    //overflow: hidden;
+    //text-overflow: ellipsis;
+    //white-space: nowrap;
+    &--indent {
+      padding-bottom: 40px;
+    }
+  }
+  &__block {
+    display: flex;
+    &--end {
+      justify-content: flex-end;
+    }
+  }
+  &__btn {
+    @include font(bold, 18px, 22px);
+    color: white;
+  }
+  &--indent {
+    margin-bottom: 40px;
+  }
+
+}
