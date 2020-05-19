@@ -1,5 +1,6 @@
 .element {
   position: relative;
+  text-align: center;
   &__image {
     width: 100%;
     border-radius: 50%;
@@ -9,7 +10,7 @@
   }
   &__price {
     position: absolute;
-    bottom: 5px;
+    //bottom: 5px;
     transform: translateY(-125%);
     @include font(bold, 45px, 45px);
     color: white;
@@ -23,6 +24,15 @@
     color: white;
     text-decoration: underline;
     text-decoration-color: rgba(white,1);
+    &--indent {
+      margin-bottom: 10px;
+    }
+  }
+  &__btn {
+    @include font(bold, 18px, 22px);
+    color: white;
+    opacity: 0;
+    transition: opacity $transition-time ease;
   }
   &.hit:after {
     content: '';

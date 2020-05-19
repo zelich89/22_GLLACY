@@ -1,17 +1,22 @@
 .choose {
 
   &__items {
-    //@extend .row;
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
   }
   &__item {
-    //@extend .col-3;
     width: 25%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 6px 15px 20px;
+    transition: border-color $transition-time ease;
+    &:hover {
+      background-color: rgba(#fff, .2);
+      border-radius: 5px;
+      .element__btn {
+        opacity: 1;
+      }
+    }
   }
   &--indent {
     margin-bottom: 32px;

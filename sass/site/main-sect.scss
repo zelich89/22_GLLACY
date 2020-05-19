@@ -42,10 +42,14 @@
     }
   }
   &__dot {
+    cursor: pointer;
     @include square-size(20px);
     border-radius: 50%;
     border: 2px solid white;
     transition: background-color $transition-time ease;
+    &:hover {
+      background-color: rgba(white, .4);
+    }
   }
   &__btn {
     position: absolute;

@@ -81,6 +81,15 @@
     white-space: nowrap;
     overflow: hidden;
     @include font(normal, 18px, 22px);
+    font-weight: bold;
+    transition: border-color $transition-time ease;
+    &:hover {
+      border: 2px solid  rgba(#9a9a9a, .52);
+    }
+    &:focus {
+      border: 2px solid  rgba(#2e88e4, .52);
+      font-weight: normal;
+    }
     &--indent {
       margin-right: 10px;
     }

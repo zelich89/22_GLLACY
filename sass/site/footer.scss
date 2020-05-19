@@ -11,11 +11,12 @@
 
   }
   &__list {
-
+    width: 30%;
     display: flex;
     flex-wrap: wrap;
   }
   &__item {
+    position: relative;
     width: 50%;
     display: flex;
     align-items: center;
@@ -23,8 +24,22 @@
     text-decoration: underline;
     text-decoration-color: rgba(white, .2);
   }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-120%,-50%);
+  }
   &__copyright {
-
-
+    @include font(normal, 12px, 18px);
+  }
+  &__copyright-image {
+    width: 100px;
+    &--indent {
+      margin-bottom: 10px;
+    }
+  }
+  &--indent {
+    padding: 25px 0;
   }
 }
